@@ -1,0 +1,16 @@
+.color-red{
+    color: red;
+    
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.border {
+    border: 3px blue solid;
+}

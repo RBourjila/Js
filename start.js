@@ -86,10 +86,28 @@ switch (yourBurger) {
     text = "Carnivor burger i like it !";
     break;
 
-  case "personnalisé":
+  case "le personnalisé":
     text = "Hey don't steal my burger, are you a thief? :( ";
     break;
   default:
     text = "I didnt know this burger ! Let me try !";
 }
 console.log(text);
+
+const clone = [...burger];
+
+clone[0] = burger.slice("pain", "chedar", "cornichon","ketchup","salade","tomate","ognion");
+clone[1] = burger.slice("pain","cornichon","ketchup","salade","tomate","ognion",);
+clone[2] = burger.slice("pain","chedar","steak","ketchup",);
+clone[3] = burger.slice("pain","chedar","steak","salade","tomate","ognion",)
+
+console.log(clone)
+
+//Récuperer des éléments du DOM
+
+
+console.log(document.getElementById("my-id"));
+
+console.log(document.getElementsByClassName("my-class"));
+
+console.log(document.getElementsByTagName("ul")); 
